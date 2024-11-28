@@ -38,7 +38,8 @@
   },
   "scripts": {
     "test": "jest --watchAll  --detectOpenHandles --verbose --coverage ",
-    "start": "npx tsc -p tsconfig.json && node dist/server.js",
+    "build": "npx tsc -p tsconfig.json",
+    "start": "node ./dist/server.js",
     "dev": "nodemon server.js",
     "check": "prettier --check .",
     "format": "prettier --write .",
